@@ -11,3 +11,6 @@ PRODUCT_DEVICE := socrates
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K60 Pro
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Include OrangeFox specific config
+$(call inherit-product, device/xiaomi/socrates/OrangeFoxConfig.mk)
