@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 AB_OTA_UPDATER := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-PRODUCT_NAME := fox_socrates
+PRODUCT_NAME := twrp_socrates
 PRODUCT_DEVICE := socrates
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K60 Pro

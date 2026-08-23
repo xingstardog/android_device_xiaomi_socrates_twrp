@@ -1,2 +1,2 @@
 ﻿PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_socrates.mk
+    $(LOCAL_DIR)/twrp_socrates.mk
