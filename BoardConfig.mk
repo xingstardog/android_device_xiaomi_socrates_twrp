@@ -64,3 +64,7 @@ TW_THEME := portrait_hdpi
 # Brightness
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1024
+
+# 强制将 Recovery 资源打包进 vendor_boot 分区
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
