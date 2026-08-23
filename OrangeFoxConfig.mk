@@ -1,32 +1,29 @@
-# ==========================================
-# 1. 基础信息 (这块随便填)
+﻿# ==========================================
+# 1. 鍩虹淇℃伅 (杩欏潡闅忎究濉?
 # ==========================================
 OF_MAINTAINER_PATCH_VERSION := 1
 OF_MAINTAINER := Lime
-# 这里的 1 代表这是第一个编译版本
-OF_MAINTAINER_AVATAR := /dev/null
+# 杩欓噷鐨?1 浠ｈ〃杩欐槸绗竴涓紪璇戠増鏈?OF_MAINTAINER_AVATAR := /dev/null
 
 # ==========================================
-# 2. 屏幕与UI配置 (【必改】请根据你机型修改)
+# 2. 灞忓箷涓嶶I閰嶇疆 (銆愬繀鏀广€戣鏍规嵁浣犳満鍨嬩慨鏀?
 # ==========================================
-# Redmi 12C 是 720x1650 的屏幕。如果你是别的手机，请查清楚分辨率高度
-OF_SCREEN_H := 3200
+# Redmi 12C 鏄?720x1650 鐨勫睆骞曘€傚鏋滀綘鏄埆鐨勬墜鏈猴紝璇锋煡娓呮鍒嗚鲸鐜囬珮搴?OF_SCREEN_H := 3200
 
-# 状态栏高度：这是为了避让刘海/水滴屏出现奇奇怪怪的问题
+# 鐘舵€佹爮楂樺害锛氳繖鏄负浜嗛伩璁╁垬娴?姘存淮灞忓嚭鐜板濂囨€€殑闂
 OF_STATUS_H := 65
 
-# 左右边距：避开屏幕圆角
+# 宸﹀彸杈硅窛锛氶伩寮€灞忓箷鍦嗚
 OF_STATUS_INDENT_LEFT := 48
 OF_STATUS_INDENT_RIGHT := 48
 
-# 时钟位置：1=左边, 2=中间 (水滴屏建议放左边 1)
+# 鏃堕挓浣嶇疆锛?=宸﹁竟, 2=涓棿 (姘存淮灞忓缓璁斁宸﹁竟 1)
 OF_CLOCK_POS := 1
 
-# 允许在设置里禁用导航栏
-OF_ALLOW_DISABLE_NAVBAR := 0
+# 鍏佽鍦ㄨ缃噷绂佺敤瀵艰埅鏍?OF_ALLOW_DISABLE_NAVBAR := 0
 
 # ==========================================
-# 3. 核心功能
+# 3. 鏍稿績鍔熻兘
 # ==========================================
 OF_USE_MAGISKBOOT := 1
 OF_USE_MAGISKBOOT_FOR_ALL_PATCHES := 0
@@ -35,34 +32,32 @@ OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_NO_MIUI_PATCH_WARNING := 1
 
 # ==========================================
-# 4. 【关键】Android 12+ 解密与防砖配置
-# ==========================================
-# 针对 Metadata 加密的等待逻辑，解决 Data 挂载慢或失败
+# 4. 銆愬叧閿€慉ndroid 12+ 瑙ｅ瘑涓庨槻鐮栭厤缃?# ==========================================
+# 閽堝 Metadata 鍔犲瘑鐨勭瓑寰呴€昏緫锛岃В鍐?Data 鎸傝浇鎱㈡垨澶辫触
 OF_SKIP_METADATA_DECRYPTION_WAIT := 0
 
-# 不要修改被加密的设备（防止触发 AVB 红字无法开机）
+# 涓嶈淇敼琚姞瀵嗙殑璁惧锛堥槻姝㈣Е鍙?AVB 绾㈠瓧鏃犳硶寮€鏈猴級
 OF_DONT_PATCH_ENCRYPTED_DEVICE := 1
 
-# 保持 DM-Verity 状态，防止修改 System 后出现傻逼提示
-OF_KEEP_DM_VERITY := 1
+# 淇濇寔 DM-Verity 鐘舵€侊紝闃叉淇敼 System 鍚庡嚭鐜板偦閫兼彁绀?OF_KEEP_DM_VERITY := 1
 
-# 强制使用 magiskboot 可以在刷入时自动修补 Boot，避免掉 Root
+# 寮哄埗浣跨敤 magiskboot 鍙互鍦ㄥ埛鍏ユ椂鑷姩淇ˉ Boot锛岄伩鍏嶆帀 Root
 OF_USE_MAGISKBOOT_COMPRESSED_WEBP := 0
 
 # ==========================================
-# 5. 其他杂项
+# 5. 鍏朵粬鏉傞」
 # ==========================================
-# 启用很多好用的小工具
+# 鍚敤寰堝濂界敤鐨勫皬宸ュ叿
 OF_ENABLE_LPTOOLS := 1
-# 默认备份列表
+# 榛樿澶囦唤鍒楄〃
 OF_QUICK_BACKUP_LIST := /boot;/data;
 
 # ==========================================
-# 6. K60 Pro 专属 A/B 与分区配置 (极其重要)
+# 6. K60 Pro 涓撳睘 A/B 涓庡垎鍖洪厤缃?(鏋佸叾閲嶈)
 # ==========================================
 OFOX_AB_DEVICE := true
 OFOX_VIRTUAL_AB_DEVICE := true
 FOX_VIRTUAL_AB_OTA := true
-FOX_RECOVERY_INSTALL_PARTITION := "/vendor_boot"
+FOX_RECOVERY_INSTALL_PARTITION := "/recovery"
 FOX_RECOVERY_VENDOR_PARTITION := "/vendor"
 FOX_RECOVERY_SYSTEM_PARTITION := "/system"

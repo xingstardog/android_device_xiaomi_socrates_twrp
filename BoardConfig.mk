@@ -1,4 +1,4 @@
-# BoardConfig.mk for socrates
+﻿# BoardConfig.mk for socrates
 
 DEVICE_PATH := device/xiaomi/socrates
 
@@ -65,11 +65,11 @@ TW_THEME := portrait_hdpi
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1024
 
-# 强制将 Recovery 资源打包进 vendor_boot 分区
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+# 寮哄埗灏?Recovery 璧勬簮鎵撳寘杩?vendor_boot 鍒嗗尯
+# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Move recovery resources to vendor_boot
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := false
