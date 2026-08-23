@@ -14,3 +14,12 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 # Include OrangeFox specific config
 $(call inherit-product, device/xiaomi/socrates/OrangeFoxConfig.mk)
+
+# A/B
+AB_OTA_PARTITIONS += \
+    boot \
+    vendor_boot \
+    dtbo \
+    vbmeta \
+    vbmeta_system \
+    vbmeta_vendor
