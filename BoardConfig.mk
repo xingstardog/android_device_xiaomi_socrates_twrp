@@ -1,4 +1,4 @@
-﻿# BoardConfig.mk for socrates
+# BoardConfig.mk for socrates
 
 DEVICE_PATH := device/xiaomi/socrates
 
