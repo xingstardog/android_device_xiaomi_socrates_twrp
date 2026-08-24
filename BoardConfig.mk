@@ -76,3 +76,6 @@ BOARD_USES_RECOVERY_AS_BOOT := false
 
 # Force build recovery.img for A/B devices with dedicated recovery
 BOARD_HAS_RECOVERY_PARTITION := true
+
+# Recovery Partition Size
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
