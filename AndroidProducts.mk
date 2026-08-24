@@ -1,5 +1,5 @@
-PRODUCT_MAKEFILES := \
+﻿PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_socrates.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_socrates-eng
+    twrp_socrates-ap2a-eng
