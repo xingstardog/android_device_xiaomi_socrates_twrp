@@ -78,3 +78,6 @@ BOARD_HAS_RECOVERY_PARTITION := true
 
 # Recovery Partition Size
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
+
+# Fix OrangeFox 14.1 twres bug during make
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
