@@ -71,7 +71,7 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 # Move recovery resources to vendor_boot
 # BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_USES_RECOVERY_AS_BOOT := false
 
 # Force build recovery.img for A/B devices with dedicated recovery
 BOARD_HAS_RECOVERY_PARTITION := true
