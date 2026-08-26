@@ -1,4 +1,4 @@
-﻿# BoardConfig.mk for socrates
+# BoardConfig.mk for socrates
 
 DEVICE_PATH := device/xiaomi/socrates
 
@@ -82,3 +82,6 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 104857600
 
 # Fix OrangeFox 14.1 twres bug during make
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# K60 Pro uses a kernel-less recovery image!
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
