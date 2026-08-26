@@ -85,3 +85,6 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # K60 Pro uses a kernel-less recovery image!
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
+
+# Spoof OS version and patch level to bypass Anti-Rollback
+BOARD_MKBOOTIMG_ARGS += --os_version 14.0.0 --os_patch_level 2099-12
