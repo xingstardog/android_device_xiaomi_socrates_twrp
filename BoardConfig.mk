@@ -1,4 +1,4 @@
-# BoardConfig.mk for socrates
+﻿# BoardConfig.mk for socrates
 
 DEVICE_PATH := device/xiaomi/socrates
 
@@ -30,7 +30,7 @@ BOARD_KERNEL_CMDLINE := video=vfb:640x400,bpp=32,memsize=3072000 disable_dma32=o
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-BOARD_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -66,7 +66,7 @@ TW_THEME := portrait_hdpi
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1024
 
-# 鐎殿喖鎼崺妤冧焊?Recovery 閻犙冨缁噣骞嶉幘鍐茬樁閺?vendor_boot 闁告帒妫楃亸?# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+# 閻庢鍠栭幖顐﹀春濡ゅ啩鐒?Recovery 闁荤姍鍐仾缂侇煈鍣ｉ獮宥夊箻閸愯尙妯侀柡?vendor_boot 闂佸憡甯掑Λ妤冧焊?# BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 # BOARD_INCLUDE_RECOVERY_DTBO := true
 
 # Move recovery resources to vendor_boot
